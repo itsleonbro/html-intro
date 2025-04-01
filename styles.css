@@ -49,3 +49,27 @@ main .right-side .portrait {
   border-radius: 50%;
   object-fit: cover;
 }
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .social-links ul {
+  list-style: none;
+}
+
+#contact .social-links ul {
+  display: flex;
+  gap: 40px;
+}
+
+#contact .social-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+#contact .social-links a:hover {
+  text-decoration: none;
+  color: #409db9;
+}
