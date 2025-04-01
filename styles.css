@@ -38,7 +38,17 @@ nav ul a:hover::after {
 }
 
 main .hero {
-  border-radius: 20px;
+  border-radius: 16px;
+  height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  margin-bottom: 80px;
+}
+
+main .hero:hover {
+  transform: scale(1.01);
 }
 
 #about {
@@ -48,6 +58,8 @@ main .hero {
 .left-side,
 .right-side {
   flex: 1;
+  margin-bottom: 80px;
+
 }
 
 .left-side p {
@@ -69,6 +81,8 @@ main .right-side .portrait {
 #contact {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
+
 }
 
 #contact .social-links ul {
