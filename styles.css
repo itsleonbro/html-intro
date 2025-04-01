@@ -59,11 +59,16 @@ main .hero:hover {
 .right-side {
   flex: 1;
   margin-bottom: 80px;
-
 }
 
 .left-side p {
   padding-right: 200px;
+}
+
+main .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main .right-side {
@@ -82,7 +87,6 @@ main .right-side .portrait {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
-
 }
 
 #contact .social-links ul {
