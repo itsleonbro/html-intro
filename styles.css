@@ -20,3 +20,32 @@ nav ul a {
   text-decoration: none;
   color: #000;
 }
+
+main .hero {
+  border-radius: 20px;
+}
+
+#about {
+  display: flex;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+}
+
+.left-side p {
+  padding-right: 200px;
+}
+
+main .right-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .right-side .portrait {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
