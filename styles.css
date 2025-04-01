@@ -63,6 +63,7 @@ main .hero:hover {
 }
 
 .left-side p {
+  padding-top: 20px;
   padding-right: 200px;
 }
 
