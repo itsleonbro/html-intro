@@ -44,6 +44,7 @@ nav ul a {
   letter-spacing: 0.5px;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul a:hover {
@@ -78,6 +79,11 @@ main .hero {
   box-shadow: var(--shadow);
   margin-bottom: 100px;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+main .hero:hover {
+  transform: scale(1.01);
 }
 
 #about {
@@ -169,6 +175,7 @@ main .right-side .portrait {
   padding: 8px 16px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 #contact .social-links a:hover {
