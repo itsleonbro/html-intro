@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Leon Hlabathi | Full-stack Developer & Musician</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
+    <meta
+      name="description"
+      content="Leon Hlabathi - Full-stack developer and musician"
+    />
   </head>
   <body>
     <nav id="home">
-      <div>
+      <div class="logo">
         <img
           src="/assets/leon-hlabathi-logo-black-transparent.webp"
-          alt="logo"
-          width="100"
+          alt="Leon Hlabathi's Logo"
+          width="120"
         />
       </div>
 
       <!-- hamburger menu btn -->
-      <button class="hamburger">
+      <button class="hamburger" aria-label="Toggle menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -26,8 +36,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -39,13 +49,13 @@
       <div>
         <img
           src="https://images.unsplash.com/photo-1655126675340-682b41d024d0"
-          alt=""
+          alt="audi rs3"
           width="100%"
           class="hero"
         />
       </div>
 
-      <div id="about">
+      <section id="about">
         <div class="left-side">
           <h1>Leon Hlabathi</h1>
           <p>
@@ -64,30 +74,45 @@
             class="portrait"
           />
         </div>
-      </div>
+      </section>
     </main>
 
     <footer id="contact">
       <div class="social-links">
+        <h2>Connect With Me</h2>
         <ul>
           <li>
-            <a href="https://instagram.com/leonhlabathi" target="_blank"
-              >Instagram</a
+            <a
+              href="https://instagram.com/leonhlabathi"
+              target="_blank"
+              rel="noopener"
             >
+              Instagram
+            </a>
           </li>
           <li>
-            <a href="https://twitter.com/leonhlabathi" target="_blank"
-              >Twitter</a
+            <a
+              href="https://twitter.com/leonhlabathi"
+              target="_blank"
+              rel="noopener"
             >
+              Twitter
+            </a>
           </li>
-
           <li>
-            <a href="https://github.com/itsleonbro" target="_blank">GitHub</a>
+            <a
+              href="https://github.com/itsleonbro"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
           </li>
         </ul>
       </div>
 
       <div class="phone">
+        <h2>Get in Touch</h2>
         <p>067 227 2329</p>
       </div>
     </footer>

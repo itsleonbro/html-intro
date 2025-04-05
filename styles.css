@@ -2,40 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, "Segoe UI", sans-serif;
+  font-family: "Poppins", -apple-system, "Segoe UI", sans-serif;
+}
+
+/* variables */
+:root {
+  --primary-color: #5e17eb;
+  --secondary-color: #f5f5f7;
+  --text-color: #333333;
+  --accent-color: #ff9e1b;
+  --dark-accent: #141414;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 body {
-  padding: 10px 50px;
+  padding: 20px 60px;
+  color: var(--text-color);
+  background-color: #ffffff;
+  line-height: 1.6;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 25px;
-  margin-bottom: 30px;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 50px;
 }
 
 nav ul a {
   text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: var(--text-color);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
 }
 
 nav ul a:hover {
-  color: #409db9;
-}
-
-nav ul a:hover::after {
-  width: 100%;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .hamburger {
@@ -53,9 +66,8 @@ nav ul a:hover::after {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #000;
+  background-color: var(--text-color);
   margin: 5px 0;
-  transition: all 0.3s ease;
 }
 
 main .hero {
@@ -63,28 +75,46 @@ main .hero {
   height: 500px;
   object-fit: cover;
   object-position: bottom;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease;
-  margin-bottom: 80px;
-}
-
-main .hero:hover {
-  transform: scale(1.01);
+  box-shadow: var(--shadow);
+  margin-bottom: 100px;
+  width: 100%;
 }
 
 #about {
   display: flex;
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+  padding: 50px;
+  margin-bottom: 100px;
 }
 
 .left-side,
 .right-side {
   flex: 1;
-  margin-bottom: 80px;
+}
+
+.left-side h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--dark-accent);
+  position: relative;
+}
+
+.left-side h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
 }
 
 .left-side p {
   padding-top: 20px;
-  padding-right: 200px;
+  padding-right: 100px;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 main .left-side {
@@ -96,19 +126,27 @@ main .left-side {
 main .right-side {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 main .right-side .portrait {
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  border-radius: 16px;
   object-fit: cover;
+  box-shadow: var(--shadow);
+  border: 8px solid white;
 }
 
 #contact {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 80px;
+  padding: 40px;
+  background-color: var(--dark-accent);
+  color: white;
+  border-radius: 16px;
 }
 
 #contact .social-links ul {
@@ -119,13 +157,21 @@ main .right-side .portrait {
 
 #contact .social-links a {
   text-decoration: none;
-  color: #000;
-  transition: color 0.3s ease;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #contact .social-links a:hover {
-  text-decoration: none;
-  color: #409db9;
+  background-color: var(--primary-color);
+}
+
+#contact .phone p {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* responsiveness */
@@ -137,6 +183,10 @@ main .right-side .portrait {
   main .right-side .portrait {
     width: 250px;
     height: 250px;
+  }
+
+  #about {
+    padding: 30px;
   }
 }
 
@@ -160,7 +210,6 @@ main .right-side .portrait {
     padding: 80px 30px;
     gap: 30px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
     z-index: 90;
   }
 
@@ -170,11 +219,12 @@ main .right-side .portrait {
 
   main .hero {
     height: 300px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   #about {
     flex-direction: column;
+    padding: 30px 20px;
   }
 
   .left-side p {
@@ -188,7 +238,8 @@ main .right-side .portrait {
 
   #contact {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    padding: 30px 20px;
   }
 
   #contact .social-links ul {
@@ -221,6 +272,10 @@ main .right-side .portrait {
   #contact .social-links ul {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .left-side h1 {
+    font-size: 2rem;
   }
 }
 
