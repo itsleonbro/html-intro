@@ -149,6 +149,12 @@ main .right-side .portrait {
   border-radius: 16px;
 }
 
+#contact .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 #contact .social-links ul {
   list-style: none;
   display: flex;
@@ -241,6 +247,10 @@ main .right-side .portrait {
     gap: 30px;
     padding: 30px 20px;
   }
+  #contact .social-links h2,
+  #contact .phone {
+    text-align: center;
+  }
 
   #contact .social-links ul {
     gap: 20px;
@@ -270,8 +280,9 @@ main .right-side .portrait {
   }
 
   #contact .social-links ul {
+    align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
   }
 
   .left-side h1 {
